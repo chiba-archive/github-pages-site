@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/* ================================================================
+   以下、Builder で選択したパーツのCSS（自動連結）
+   ================================================================ */
+
+/* ---- オーバーレイスライド（effects-overlay2） (effects-overlay2) ---- */
+/*effects-overlay2-parts
+---------------------------------------------------------------------------*/
+/*ボックス１個あたり*/
+.effects-overlay2-parts .list-parts {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 1px;	/*下に1pxのスペース*/
+}
+
+/*テキストブロック*/
+.effects-overlay2-parts .text-parts {
+	position: relative;z-index: 1;
+	color: #fff;	/*文字色*/
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);	/*文字の影。右へ、下へ、ぼかす量、0,0,0は黒のことで0.5は色が50%出た状態。*/
+	padding: 5vw;	/*余白。画面はば100% = 100vwです。*/
+	width: 50%;	/*幅*/
+}
+
+	/*画面幅600px以下の追加指定*/
+	@media (max-width:600px) {
+
+	/*テキストブロック*/
+	.effects-overlay2-parts .text-parts {
+		width: 100%;	/*幅*/
+	}
+
+	}/*追加指定ここまで*/
+
+
+/*逆向き（テキスト右配置）*/
+.effects-overlay2-parts .list-parts.reverse .text-parts {
+	margin-left: auto;
+}
+
+/*h4見出し*/
+.effects-overlay2-parts .text-parts h4 {
+	font-family: var(--accent-font), var(--base-font);	/*theme.cssのaccent-fontに指定したフォントを読み込む。読み込めなければbase-fontで指定したフォントを読み込む。*/
+	font-size: min(56px, 5vw);	/*基本は5vwで、最大56pxまで*/
+	font-weight: normal;	/*デフォルトの太字を標準に*/
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+/*h4見出し内のspan（小さな文字）*/
+.effects-overlay2-parts .text-parts h4 span {
+	display: block;
+	font-size: 0.8rem;	/*文字サイズ80%*/
+}
+
+/*段落（p）*/
+.effects-overlay2-parts .text-parts p {
+	font-size: 0.85rem;	/*文字サイズ85%*/
+}
+
+/*1つ目（左）の背景画像*/
+.effects-overlay2-parts .image1-parts {
+	background: url("../images/landscape1.jpg") no-repeat center center / cover;
+}
+
+/*2つ目（右）の背景画像*/
+.effects-overlay2-parts .image2-parts {
+	background: url("../images/landscape2.jpg") no-repeat center center / cover;
+}
+
+/*ボタン*/
+.effects-overlay2-parts .btn-parts a {
+	display: block;text-decoration: none;
+	background: rgba(0,0,0,0.5);	/*背景色。0,0,0は黒のことで0.5は色が50%出た状態。*/
+	color: #fff;	/*文字色*/
+	padding: 0.5rem;	/*ボタン内の余白。0.5文字分。*/
+	text-align: center;	/*テキストをセンタリング*/
+	border: 1px solid #fff;	/*枠線の幅、線種、色*/
+}
+/*ボタンのマウスオン時*/
+.effects-overlay2-parts .btn-parts a:hover {
+	background: rgba(0,0,0,0.8);	/*背景色。0,0,0は黒のことで0.8は色が80%出た状態。*/
+	letter-spacing: 0.1em;	/*文字間隔を少しだけ広げる*/
+}
+
+/*マウスオン用のアニメーション*/
+.effects-overlay2-parts .list-parts::before {
+	content: "";position: absolute;inset: 0;
+	background: rgba(0,0,0,0.6);		/*写真に重ねておく半透明の黒い色。0,0,0は黒のことで0.6は色が60%出た状態。*/
+	transition: transform 0.3s 0.1s;	/*アニメーションの速度（0.3秒）と待機時間（0.1秒）。*/
+}
+.effects-overlay2-parts .list-parts:hover::before {
+	transform: translateX(100%);	/*マウスオンで半透明の黒を右側へ出す*/
+}
+.effects-overlay2-parts .list-parts.reverse:hover::before {
+	transform: translateX(-100%);	/*マウスオンで半透明の黒を左側へ出す*/
+}
+
+/* ---- masonry（ui-tools-masonary1） (ui-tools-masonary1) ---- */
+/*Masonry
+---------------------------------------------------------------------------*/
+/*サムネを囲んでいるブロック全体*/
+.ui-tools-maronry1-parts {
+  animation: opa1 0.2s 0.4s both;  /*0.4秒待機後、0.2秒かけてフェードイン*/
+}
+
+/* カラム幅：PC 4列 */
+.ui-tools-maronry1-parts .masonry1-size-parts,
+.ui-tools-maronry1-parts .list-parts {
+  width: calc(25% - 16px);
+}
+
+.ui-tools-maronry1-parts .list-parts {
+  margin-bottom: 16px;
+}
+
+/* レスポンシブ：1000px 未満で 3列 */
+@media (max-width: 1000px) {
+  .ui-tools-maronry1-parts .masonry1-size-parts,
+  .ui-tools-maronry1-parts .list-parts {
+    width: calc(33.333% - 16px);
+  }
+}
+
+/* レスポンシブ：500px 未満で 2列 */
+@media (max-width: 500px) {
+  .ui-tools-maronry1-parts .masonry1-size-parts,
+  .ui-tools-maronry1-parts .list-parts {
+    width: calc(50% - 16px);
+  }
+}
+
+/* 中身共通 */
+.ui-tools-maronry1-parts .list-parts a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.ui-tools-maronry1-parts .list-parts img,
+.ui-tools-maronry1-parts .list-parts video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 画像・動画に軽いホバー演出 */
+.ui-tools-maronry1-parts .list-parts img,
+.ui-tools-maronry1-parts .media-wrapper {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ui-tools-maronry1-parts .list-parts a:hover img,
+.ui-tools-maronry1-parts .list-parts a:hover .media-wrapper {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 動画サムネ用ラッパー */
+.ui-tools-maronry1-parts .media-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* サムネ動画 */
+.ui-tools-maronry1-parts .thumb-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 「▶」アイコン */
+.ui-tools-maronry1-parts .video-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #ff0000;  /*背景色*/
+  color: #fff;  /*文字色*/
+  font-size: 12px;  /*アイコンのサイズ*/
+  width: 28px;  /*アイコンの幅*/
+  line-height: 28px;  /*高さ*/
+  text-align: center;
+  border-radius: 100px;  /*円形にする*/
+  pointer-events: none;
+}
+
+/* ---- masonry（ui-tools-masonary1） (ui-tools-masonary1) ---- */
+/*Masonry
+---------------------------------------------------------------------------*/
+/*サムネを囲んでいるブロック全体*/
+.ui-tools-maronry1-parts {
+  animation: opa1 0.2s 0.4s both;  /*0.4秒待機後、0.2秒かけてフェードイン*/
+}
+
+/* カラム幅：PC 4列 */
+.ui-tools-maronry1-parts .masonry1-size-parts,
+.ui-tools-maronry1-parts .list-parts {
+  width: calc(25% - 16px);
+}
+
+.ui-tools-maronry1-parts .list-parts {
+  margin-bottom: 16px;
+}
+
+/* レスポンシブ：1000px 未満で 3列 */
+@media (max-width: 1000px) {
+  .ui-tools-maronry1-parts .masonry1-size-parts,
+  .ui-tools-maronry1-parts .list-parts {
+    width: calc(33.333% - 16px);
+  }
+}
+
+/* レスポンシブ：500px 未満で 2列 */
+@media (max-width: 500px) {
+  .ui-tools-maronry1-parts .masonry1-size-parts,
+  .ui-tools-maronry1-parts .list-parts {
+    width: calc(50% - 16px);
+  }
+}
+
+/* 中身共通 */
+.ui-tools-maronry1-parts .list-parts a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.ui-tools-maronry1-parts .list-parts img,
+.ui-tools-maronry1-parts .list-parts video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 画像・動画に軽いホバー演出 */
+.ui-tools-maronry1-parts .list-parts img,
+.ui-tools-maronry1-parts .media-wrapper {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ui-tools-maronry1-parts .list-parts a:hover img,
+.ui-tools-maronry1-parts .list-parts a:hover .media-wrapper {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 動画サムネ用ラッパー */
+.ui-tools-maronry1-parts .media-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* サムネ動画 */
+.ui-tools-maronry1-parts .thumb-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 「▶」アイコン */
+.ui-tools-maronry1-parts .video-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #ff0000;  /*背景色*/
+  color: #fff;  /*文字色*/
+  font-size: 12px;  /*アイコンのサイズ*/
+  width: 28px;  /*アイコンの幅*/
+  line-height: 28px;  /*高さ*/
+  text-align: center;
+  border-radius: 100px;  /*円形にする*/
+  pointer-events: none;
+}

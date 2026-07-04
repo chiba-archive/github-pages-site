@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	
+<script>
+// 1. PC用の右クリックをページ全体で完全に一律禁止（後から生成されるポップアップ画像も対象）
+window.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+}, true); // 「true」を指定することで、ポップアッププログラムの処理より優先して禁止します
+
+// 2. スマホ長押しメニューの抑制（ページ全体対象）
+document.addEventListener('DOMContentLoaded', () => {
+    // リンク、画像、動画、およびポップアップの背景領域（Fancyboxのコンテナ）を対象に含める
+    const targetElements = document.querySelectorAll('img, video, a, .fancybox-container, .fancybox-stage');
+    
+    targetElements.forEach(element => {
+        element.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                element.style.webkitTouchCallout = 'none';
+            }
+        }, { passive: true });
+    });
+});
+</script>
+
+<meta charset="UTF-8">
+<title>旧国鉄広告が織りなす千葉県の歳時記〜駅ポスター編</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="時を越えて綴る千葉県の歳時記　旧国鉄広告が織りなす風情と旅情の物語">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="旧国鉄広告が織りなす千葉県の歳時記"></a></h1>
+</header>
+
+<!--ヘッダー下メニュー（※開閉メニューはhtmlの下の方にあります）-->
+<div id="menubar2">
+<nav>
+<ul>
+<li><a href="index.html">トップページ</a></li>
+<li><a href="nakaduri.html">中吊りポスター</a>
+<ul>
+	<li><a href="nakaduri1-3.html">1月〜3月</a></li>
+	<li><a href="nakaduri4-6.html">4月〜6月</a></li>
+	<li><a href="nakaduri7-9.html">7月〜9月</a></li>
+	<li><a href="nakaduri10-12.html">10月〜12月</a></li>
+	</ul>
+</li>
+<li><a href="ekipo.html">駅貼りポスター</a>
+<ul>
+	<li><a href="ekipo1-3.html">1月〜3月</a></li>
+	<li><a href="ekipo4-6.html">4月〜6月</a></li>
+	<li><a href="ekipo7-9.html">7月〜9月</a></li>
+	<li><a href="ekipo10-12.html">10月〜12月</a></li>
+	</ul></li>
+</ul>
+</nav>
+
+</div>
+
+<div id="contents">
+<h2 style="text-align:center;margin-bottom:-1em">駅貼りポスター1月〜3月掲出</h2>
+<p style="text-align:center;font-size:0.9em">画像が表示されるまで少し時間がかかる場合があります。</p>
+<main>
+
+	<!-- ▼ masonry（ui-tools-masonary1） (ui-tools-masonary1) -->
+<section>
+
+<div class="ui-tools-maronry1-parts">
+
+<!-- Masonry のカラム幅の基準 -->
+<div class="masonry1-size-parts"></div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7844.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　櫻名所ご案内">
+<img src="images/ekipo/1-3/IMG_7844.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　櫻名所ご案内" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7846.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　上州のスキー地案内">
+<img src="images/ekipo/1-3/IMG_7846.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　上州のスキー地案内" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7870.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　さくらだより">
+<img src="images/ekipo/1-3/IMG_7870.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　さくらだより" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7871.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　">
+<img src="images/ekipo/1-3/IMG_7871.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7872.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　客車の新造について">
+<img src="images/ekipo/1-3/IMG_7872.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　客車の新造について" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7873.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　第１回千葉県　観光土産品展入選品">
+<img src="images/ekipo/1-3/IMG_7873.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　第１回千葉県　観光土産品展入選品" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7874.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　国鉄を数字で見れば">
+<img src="images/ekipo/1-3/IMG_7874.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　国鉄を数字で見れば" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7875.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　スキー場案内（上越線沿線）">
+<img src="images/ekipo/1-3/IMG_7875.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　スキー場案内（上越線沿線）" loading="lazy">
+</a>
+</div>
+
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7892.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　二等車の連結">
+<img src="images/ekipo/1-3/IMG_7892.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　二等車の連結" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7895.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　千葉県の国立公園">
+<img src="images/ekipo/1-3/IMG_7895.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　千葉県の国立公園" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7897.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　沿線案内　浅草橋駅から幕張駅まで">
+<img src="images/ekipo/1-3/IMG_7897.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　沿線案内　浅草橋駅から幕張駅まで" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7898.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　成田から椎柴まで">
+<img src="images/ekipo/1-3/IMG_7898.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　沿線案内　成田から椎柴まで" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7899.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　沿線案内　浜野から浜金谷まで">
+<img src="images/ekipo/1-3/IMG_7899.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　沿線案内　浜野から浜金谷まで" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7900.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　沿線案内　千葉から銚子まで">
+<img src="images/ekipo/1-3/IMG_7900.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　沿線案内　千葉から銚子まで" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7901.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　新春に際し謹んで皆様のご多幸をお祝い申し上げます。　駅長">
+<img src="images/ekipo/1-3/IMG_7901.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　新春に際し謹んで皆様のご多幸をお祝い申し上げます。　駅長" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7917.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　旅を楽しく育てよう明るい人情と道徳">
+<img src="images/ekipo/1-3/IMG_7917.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　旅を楽しく育てよう明るい人情と道徳" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7918.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　年のはじめにちなみて　國鉄もののはじめを申し上げます。">
+<img src="images/ekipo/1-3/IMG_7918.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　年のはじめにちなみて　國鉄もののはじめを申し上げます。" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7919.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　房總の国宝（建造物の巻）">
+<img src="images/ekipo/1-3/IMG_7919.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　房總の国宝（建造物の巻）" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7920.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　房總の天然記念物">
+<img src="images/ekipo/1-3/IMG_7920.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　房總の天然記念物" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7925.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　1月の旅行ごよみ">
+<img src="images/ekipo/1-3/IMG_7925.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　1月の旅行ごよみ" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7927.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　櫻の名所案内">
+<img src="images/ekipo/1-3/IMG_7927.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　櫻の名所案内" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7930.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　三月の旅行歴">
+<img src="images/ekipo/1-3/IMG_7930.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　三月の旅行歴" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7931.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　二月の旅行歴　成田山公園の観梅">
+<img src="images/ekipo/1-3/IMG_7931.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　二月の旅行歴　成田山公園の観梅" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7937.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　おねがい　国鉄モニターの御注意から">
+<img src="images/ekipo/1-3/IMG_7937.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　おねがい　国鉄モニターの御注意から" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7938.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　スキー臨時列車御案内">
+<img src="images/ekipo/1-3/IMG_7938.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　スキー臨時列車御案内" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7939.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　二月の旅行ごよみ">
+<img src="images/ekipo/1-3/IMG_7939.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　二月の旅行ごよみ" loading="lazy">
+</a>
+</div>
+
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7947.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　櫻の名所案内">
+<img src="images/ekipo/1-3/IMG_7947.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　櫻の名所案内" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7950.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　花の名所案内　彌生の空に">
+<img src="images/ekipo/1-3/IMG_7950.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　花の名所案内　彌生の空に" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7951.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　旅行は２箇所廻れば運賃一割引の周遊券で　園遊指定地案内">
+<img src="images/ekipo/1-3/IMG_7951.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　旅行は２箇所廻れば運賃一割引の周遊券で　園遊指定地案内" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7952.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　安くて便利な周遊割引乘車券">
+<img src="images/ekipo/1-3/IMG_7952.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　安くて便利な周遊割引乘車券" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7956.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　2月・3月の御旅行は成田詣と観梅へ、お花畑と誕生寺へ">
+<img src="images/ekipo/1-3/IMG_7956.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　2月・3月の御旅行は成田詣と観梅へ、お花畑と誕生寺へ" loading="lazy">
+</a>
+</div>
+
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7962.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　乘込鮒釣り案内">
+<img src="images/ekipo/1-3/IMG_7962.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　乘込鮒釣り案内" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7963.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　季節の味覚と行楽（房總線沿うて）">
+<img src="images/ekipo/1-3/IMG_7963.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　季節の味覚と行楽（房總線沿うて）" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/ekipo/1-3/IMG_7968.JPG" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　総武・成田・房総線沿線　社寺初詣案内">
+<img src="images/ekipo/1-3/IMG_7968.JPG" alt="千葉県生誕150周年　国鉄駅貼りポスター　ペーパーマイク　総武・成田・房総線沿線　社寺初詣案内" loading="lazy">
+</a>
+</div>
+
+
+</section>
+<!-- ▲ ui-tools-masonary1 -->
+
+
+
+</main>
+
+</div>
+<!--/#contents-->
+
+
+
+<!--以下の行はテンプレートの著作。削除しないで下さい。-->
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+</div>
+<!--/#container-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--開閉メニュー-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">トップページ</a></li>
+<li><a href="nakaduri.html">中吊りポスター</a>
+<ul>
+	<li><a href="nakaduri1-3.html">1月〜3月</a></li>
+	<li><a href="nakaduri4-6.html">4月〜6月</a></li>
+	<li><a href="nakaduri7-9.html">7月〜9月</a></li>
+	<li><a href="nakaduri10-12.html">10月〜12月</a></li>
+	</ul>
+</li>
+<li><a href="ekipo.html">駅貼りポスター</a>
+<ul>
+	<li><a href="ekipo1-3.html">1月〜3月</a></li>
+	<li><a href="ekipo4-6.html">4月〜6月</a></li>
+	<li><a href="ekipo7-9.html">7月〜9月</a></li>
+	<li><a href="ekipo10-12.html">10月〜12月</a></li>
+	</ul></li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Masonry & imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+
+<!-- Fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+<script src="js/parts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	
+<script>
+// 1. PC用の右クリックをページ全体で完全に一律禁止（後から生成されるポップアップ画像も対象）
+window.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+}, true); // 「true」を指定することで、ポップアッププログラムの処理より優先して禁止します
+
+// 2. スマホ長押しメニューの抑制（ページ全体対象）
+document.addEventListener('DOMContentLoaded', () => {
+    // リンク、画像、動画、およびポップアップの背景領域（Fancyboxのコンテナ）を対象に含める
+    const targetElements = document.querySelectorAll('img, video, a, .fancybox-container, .fancybox-stage');
+    
+    targetElements.forEach(element => {
+        element.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                element.style.webkitTouchCallout = 'none';
+            }
+        }, { passive: true });
+    });
+});
+</script>
+
+<meta charset="UTF-8">
+<title>旧国鉄広告が織りなす千葉県の歳時記〜駅ポスター編</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="時を越えて綴る千葉県の歳時記　旧国鉄広告が織りなす風情と旅情の物語">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="旧国鉄広告が織りなす千葉県の歳時記"></a></h1>
+</header>
+
+<!--ヘッダー下メニュー（※開閉メニューはhtmlの下の方にあります）-->
+<div id="menubar2">
+<nav>
+<ul>
+<li><a href="index.html">トップページ</a></li>
+<li><a href="nakaduri.html">中吊りポスター</a>
+<ul>
+	<li><a href="nakaduri1-3.html">1月〜3月</a></li>
+	<li><a href="nakaduri4-6.html">4月〜6月</a></li>
+	<li><a href="nakaduri7-9.html">7月〜9月</a></li>
+	<li><a href="nakaduri10-12.html">10月〜12月</a></li>
+	</ul>
+</li>
+<li><a href="ekipo.html">駅貼りポスター</a>
+<ul>
+	<li><a href="ekipo1-3.html">1月〜3月</a></li>
+	<li><a href="ekipo4-6.html">4月〜6月</a></li>
+	<li><a href="ekipo7-9.html">7月〜9月</a></li>
+	<li><a href="ekipo10-12.html">10月〜12月</a></li>
+	</ul></li>
+</ul>
+</nav>
+
+</div>
+
+<div id="contents">
+<h2 style="text-align:center;margin-bottom:-1em">動輪碑除幕式の様子</h2>
+<p style="text-align:center;font-size:0.9em">画像が表示されるまで少し時間がかかる場合があります。</p>
+<main>
+
+	<!-- ▼ masonry（ui-tools-masonary1） (ui-tools-masonary1) -->
+<section>
+
+<div class="ui-tools-maronry1-parts">
+
+<!-- Masonry のカラム幅の基準 -->
+<div class="masonry1-size-parts"></div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/02.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/02.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/03.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/03.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/04.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/04.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/05.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/05.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/06.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/06.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/07.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/07.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/08.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/08.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/09.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/09.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/10.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/10.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/11.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/11.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/12.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/12.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/13.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/13.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+
+<div class="list-parts">
+<a href="images/jyomakushiki/16.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/16.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/20.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/20.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/26.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/26.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/27.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/27.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/30.jpg" data-fancybox="gallery" data-caption="鵜澤六治（右側）">
+<img src="images/jyomakushiki/30.jpg" alt="鵜澤六治（右側）" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/15.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/15.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/jyomakushiki/14.jpg" data-fancybox="gallery" data-caption="動輪碑除幕式">
+<img src="images/jyomakushiki/14.jpg" alt="動輪碑除幕式" loading="lazy">
+</a>
+</div>
+
+
+</section>
+<!-- ▲ ui-tools-masonary1 -->
+
+
+
+</main>
+
+</div>
+<!--/#contents-->
+
+
+
+<!--以下の行はテンプレートの著作。削除しないで下さい。-->
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+</div>
+<!--/#container-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--開閉メニュー-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">トップページ</a></li>
+<li><a href="nakaduri.html">中吊りポスター</a>
+<ul>
+	<li><a href="nakaduri1-3.html">1月〜3月</a></li>
+	<li><a href="nakaduri4-6.html">4月〜6月</a></li>
+	<li><a href="nakaduri7-9.html">7月〜9月</a></li>
+	<li><a href="nakaduri10-12.html">10月〜12月</a></li>
+	</ul>
+</li>
+<li><a href="ekipo.html">駅貼りポスター</a>
+<ul>
+	<li><a href="ekipo1-3.html">1月〜3月</a></li>
+	<li><a href="ekipo4-6.html">4月〜6月</a></li>
+	<li><a href="ekipo7-9.html">7月〜9月</a></li>
+	<li><a href="ekipo10-12.html">10月〜12月</a></li>
+	</ul></li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Masonry & imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+
+<!-- Fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+<script src="js/parts.js"></script>
+
+</body>
+</html>

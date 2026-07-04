@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	
+<script>
+// 1. PC用の右クリックをページ全体で完全に一律禁止（後から生成されるポップアップ画像も対象）
+window.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+}, true); // 「true」を指定することで、ポップアッププログラムの処理より優先して禁止します
+
+// 2. スマホ長押しメニューの抑制（ページ全体対象）
+document.addEventListener('DOMContentLoaded', () => {
+    // リンク、画像、動画、およびポップアップの背景領域（Fancyboxのコンテナ）を対象に含める
+    const targetElements = document.querySelectorAll('img, video, a, .fancybox-container, .fancybox-stage');
+    
+    targetElements.forEach(element => {
+        element.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                element.style.webkitTouchCallout = 'none';
+            }
+        }, { passive: true });
+    });
+});
+</script>
+
+<meta charset="UTF-8">
+<title>旧国鉄広告が織りなす千葉県の歳時記〜中吊りポスター編</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="時を越えて綴る千葉県の歳時記　旧国鉄広告が織りなす風情と旅情の物語">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="旧国鉄広告が織りなす千葉県の歳時記"></a></h1>
+</header>
+
+<!--ヘッダー下メニュー（※開閉メニューはhtmlの下の方にあります）-->
+<div id="menubar2">
+<nav>
+<ul>
+<li><a href="index.html">トップページ</a></li>
+<li><a href="nakaduri.html">中吊りポスター</a>
+<ul>
+	<li><a href="nakaduri1-3.html">1月〜3月</a></li>
+	<li><a href="nakaduri4-6.html">4月〜6月</a></li>
+	<li><a href="nakaduri7-9.html">7月〜9月</a></li>
+	<li><a href="nakaduri10-12.html">10月〜12月</a></li>
+	</ul>
+</li>
+<li><a href="ekipo.html">駅貼りポスター</a>
+<ul>
+	<li><a href="ekipo1-3.html">1月〜3月</a></li>
+	<li><a href="ekipo4-6.html">4月〜6月</a></li>
+	<li><a href="ekipo7-9.html">7月〜9月</a></li>
+	<li><a href="ekipo10-12.html">10月〜12月</a></li>
+	</ul></li>
+</ul>
+</nav>
+</div>
+
+<div id="contents">
+<h2 style="text-align:center;margin-bottom:-1em">中吊りポスター1月〜3月掲出</h2>
+<p style="text-align:center;font-size:0.9em">画像が表示されるまで少し時間がかかる場合があります。</p>
+
+<main>
+<!-- ▼ masonry（ui-tools-masonary1） (ui-tools-masonary1) -->
+<section>
+
+
+<div class="ui-tools-maronry1-parts">
+
+<!-- Masonry のカラム幅の基準 -->
+<div class="masonry1-size-parts"></div>
+
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-1.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　旅情">
+<img src="images/nakaduri/1-3/1-3-1.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　旅情" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-2.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　謹賀新年　昭和二十五年第１回千葉競輪">
+<img src="images/nakaduri/1-3/1-3-2.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　謹賀新年　昭和二十五年第１回千葉競輪" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-3.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　國電の中では煙草は止めましょう">
+<img src="images/nakaduri/1-3/1-3-3.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　國電の中では煙草は止めましょう" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-4.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　船橋第１回小型自動車競走">
+<img src="images/nakaduri/1-3/1-3-4.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　船橋第１回小型自動車競走" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-5.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　昭和二十六年新春初旅〜成田詣り">
+<img src="images/nakaduri/1-3/1-3-5.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　昭和二十六年新春初旅〜成田詣り" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-6.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　早春のご旅行は常春の南房州へ">
+<img src="images/nakaduri/1-3/1-3-6.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　早春のご旅行は常春の南房州へ" loading="lazy">
+</a>
+</div>
+
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-7.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　観光地百選に入賞の日本水郷へ">
+<img src="images/nakaduri/1-3/1-3-7.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　観光地百選に入賞の日本水郷へ" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-8.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　子供連れの旅行は富津公園へ、鋸山公園へ">
+<img src="images/nakaduri/1-3/1-3-8.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　子供連れの旅行は富津公園へ、鋸山公園へ" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-9.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　總武線と房總線に待望久しかった二等車が装いもスマートに毎日走っております">
+<img src="images/nakaduri/1-3/1-3-9.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　總武線と房總線に待望久しかった二等車が装いもスマートに毎日走っております" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-10.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　謹賀新年">
+<img src="images/nakaduri/1-3/1-3-10.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　謹賀新年" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-11.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　汽車の回数券をご存じですか">
+<img src="images/nakaduri/1-3/1-3-11.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　汽車の回数券をご存じですか" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-12.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　プロ野球オープン試合〜スワローズ対オリオンズ">
+<img src="images/nakaduri/1-3/1-3-12.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　プロ野球オープン試合〜スワローズ対オリオンズ" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-13.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　二月の旅行暦>
+<img src="images/nakaduri/1-3/1-3-13.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　二月の旅行暦" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-14.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　三月の旅行暦">
+<img src="images/nakaduri/1-3/1-3-14.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　三月の旅行暦" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-15.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　四月の旅行暦">
+<img src="images/nakaduri/1-3/1-3-15.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　四月の旅行暦" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-16.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　国鉄の車両新造費">
+<img src="images/nakaduri/1-3/1-3-16.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　国鉄の車両新造費" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-17.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　謹賀新年">
+<img src="images/nakaduri/1-3/1-3-17.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　謹賀新年" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-18.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　旅行暦〜鹿島神宮式年神幸祭">
+<img src="images/nakaduri/1-3/1-3-18.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　旅行暦〜鹿島神宮式年神幸祭" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-19.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　季節の旅行暦">
+<img src="images/nakaduri/1-3/1-3-19.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　季節の旅行暦" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-20.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　旅行暦">
+<img src="images/nakaduri/1-3/1-3-20.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　旅行暦" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-21.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　四月の旅行暦">
+<img src="images/nakaduri/1-3/1-3-21.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　四月の旅行暦" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-22.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　一月の臨時列車">
+<img src="images/nakaduri/1-3/1-3-22.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　一月の臨時列車" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-23.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　成田山公園の観梅">
+<img src="images/nakaduri/1-3/1-3-23.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　成田山公園の観梅" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-24.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　ごぞんじですか？〜11人が100キロ旅行する場合">
+<img src="images/nakaduri/1-3/1-3-24.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　ごぞんじですか？〜11人が100キロ旅行する場合" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-25.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　釣り列車銀鱗号運転">
+<img src="images/nakaduri/1-3/1-3-25.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　釣り列車銀鱗号運転" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-26.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　成田山初詣臨時列車">
+<img src="images/nakaduri/1-3/1-3-26.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　成田山初詣臨時列車" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-27.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　房州旅行に御便利な快速列車〜房總の休日">
+<img src="images/nakaduri/1-3/1-3-27.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　房州旅行に御便利な快速列車〜房總の休日" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-28.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　正月の旅行カレンダー">
+<img src="images/nakaduri/1-3/1-3-28.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　正月の旅行カレンダー" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/nakaduri/1-3/1-3-29.jpg" data-fancybox="gallery" data-caption="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　船橋オートレース〜1周年記念豪華大レース">
+<img src="images/nakaduri/1-3/1-3-29.jpg" alt="千葉県生誕150周年　国鉄　千葉管内気動車中吊りポスター　船橋オートレース〜1周年記念豪華大レース" loading="lazy">
+</a>
+</div>
+</section>
+
+</main>
+
+</div>
+<!--/#contents-->
+
+
+
+<!--以下の行はテンプレートの著作。削除しないで下さい。-->
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+</div>
+<!--/#container-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--開閉メニュー-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">トップページ</a></li>
+<li><a href="nakaduri.html">中吊りポスター</a>
+<ul>
+	<li><a href="nakaduri1-3.html">1月〜3月</a></li>
+	<li><a href="nakaduri4-6.html">4月〜6月</a></li>
+	<li><a href="nakaduri7-9.html">7月〜9月</a></li>
+	<li><a href="nakaduri10-12.html">10月〜12月</a></li>
+	</ul>
+</li>
+<li><a href="ekipo.html">駅貼りポスター</a>
+<ul>
+	<li><a href="ekipo1-3.html">1月〜3月</a></li>
+	<li><a href="ekipo4-6.html">4月〜6月</a></li>
+	<li><a href="ekipo7-9.html">7月〜9月</a></li>
+	<li><a href="ekipo10-12.html">10月〜12月</a></li>
+	</ul></li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Masonry & imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+
+<!-- Fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+<script src="js/parts.js"></script>
+
+</body>
+</html>

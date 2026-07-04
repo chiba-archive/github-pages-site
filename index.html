@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	
+<script>
+// 1. PC用の右クリックをページ全体で完全に一律禁止（後から生成されるポップアップ画像も対象）
+window.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+}, true); // 「true」を指定することで、ポップアッププログラムの処理より優先して禁止します
+
+// 2. スマホ長押しメニューの抑制（ページ全体対象）
+document.addEventListener('DOMContentLoaded', () => {
+    // リンク、画像、動画、およびポップアップの背景領域（Fancyboxのコンテナ）を対象に含める
+    const targetElements = document.querySelectorAll('img, video, a, .fancybox-container, .fancybox-stage');
+    
+    targetElements.forEach(element => {
+        element.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                element.style.webkitTouchCallout = 'none';
+            }
+        }, { passive: true });
+    });
+});
+</script>
+
+<meta charset="UTF-8">
+<title>祝　千葉県生誕150周年〜旧国鉄広告が織りなす　千葉県の歳時記</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="祝　千葉県生誕150周年〜時を越えて綴る千葉県の歳時記　旧国鉄広告が織りなす風情と旅情の物語">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home">
+
+<div id="container">
+
+<header>
+
+<h1 id="logo"><a href="index.html"><img src="images/logo2.png" alt="祝　千葉県生誕150周年〜旧国鉄広告が織りなす千葉県の歳時記"></a></h1>
+
+<!--メイン画像-->
+<div class="mainimg video-zone">
+
+<div class="slide img1">
+<video class="bgVideo" autoplay muted loop playsinline preload="metadata">
+  <source src="images/kimitu-sukashi.mp4" media="(max-width: 800px)" type="video/mp4">
+  <source src="images/kimitu-sukashi.mp4" type="video/mp4">
+</video>
+</div>
+
+</div>
+<!--/.mainimg-->
+
+</header>
+
+<!--ヘッダー下メニュー（※開閉メニューはhtmlの下の方にあります）-->
+<div id="menubar2">
+<nav>
+<ul>
+<li><a href="index.html">トップページ</a>
+
+</li>
+<li><a href="nakaduri.html">中吊りポスター</a>
+<ul>
+	<li><a href="nakaduri1-3.html">1月〜3月</a></li>
+	<li><a href="nakaduri4-6.html">4月〜6月</a></li>
+	<li><a href="nakaduri7-9.html">7月〜9月</a></li>
+	<li><a href="nakaduri10-12.html">10月〜12月</a></li>
+	</ul>
+</li>
+
+<li><a href="ekipo.html">駅貼りポスター</a>
+<ul>
+	<li><a href="ekipo1-3.html">1月〜3月</a></li>
+	<li><a href="ekipo4-6.html">4月〜6月</a></li>
+	<li><a href="ekipo7-9.html">7月〜9月</a></li>
+	<li><a href="ekipo10-12.html">10月〜12月</a></li>
+	</ul></li>
+</ul>
+</nav>
+</div>
+
+<div id="contents">
+
+<main>
+
+<h2 style="text-align:center">プロフィール</h2>
+<section>
+
+<p>
+千葉県生誕150周年を機に、かつての国鉄広告から地域の歴史や文化を継承するためにサイトを公開しました。
+</p>
+
+<p>
+当サイトで公開しているコンテンツは、過去に「千葉県生誕150周年記念事業」として正式に登録され、ロゴ使用許諾のもとで株式会社栄光社が一定期間公開していた内容を基に、個人の歴史的アーカイブとして再公開しているものです。
+当サイト管理人の祖父である鵜澤六治（注１）が所蔵していた、当時の国鉄の中吊り広告や駅ポスターなどの実物資料を多数掲載しています。
+<p>
+
+<p>
+「昭和25年千葉市営第1回千葉競輪」の中吊りポスターや「昭和27年 千葉県主催 第1回船橋小型自動車競争」の駅貼りポスターの実物も含まれており、これらの資料を通じて、地域の歴史や当時の世相を確認することができます。
+</p>
+
+<p>
+当サイトのトップページに掲載している12枚の画像は、すべてAIを活用し、カラー化及び高精細化を施し復元を行っております。動画は、開業当時の周西駅（現在の君津駅）をAI技術により再現・映像化しています。
+（オリジナル画像出典元：千葉鉄道管理局史）</p>
+
+<h4>【サイトについて】</h4>
+<p>当初は「株式会社栄光社」として千葉県生誕150周年記念事業に登録・公開しておりましたが、現在は、個人として引き継ぎ、サイトを公開しています。
+<h4>【著作権・免責事項】</h4>
+<p>掲載画像等の著作権は各権利所有者に帰属します。掲載内容に不都合や問題がございましたら、下記「お問い合わせ」までご連絡ください。速やかに対応（修正・削除等）いたします。
+</p>
+
+<p>
+注１：国鉄時代には、千葉鉄広告協同組合の初代理事長として国鉄と広告代理店社との協力関係の礎を築きました。昭和40年には、読売新聞千葉版のコラム「汽笛一声」に、鵜澤六治による<a href="images/shouka-chiba.pdf" style="color:skyblue">鉄道唱歌千葉県版</a>が連載されました。主な職歴は、尾久機関区長、千葉機関区長など現場主義を貫いていました。千葉機関区は昭和20年6月の空襲で大きな被害を受けました。この地にて殉職した職員や学徒ら23名の尊い犠牲者の霊を慰め、その先人たちの偉業を永遠に称えるため、動輪を用いた記念碑建立の発起人として建立まで尽力しました。この記念碑には親交のあった十河信二氏筆による「礎」という文字が刻まれています。<br />
+<a href="jyomakushiki.html" style="color:skyblue">・動輪記念碑除幕式の様子</a>はこちら<br />
+<a href="konryukiroku.html" style="color:skyblue">・動輪記念碑建立までの記録を綴った写真集</a>はこちら。<br />
+※動輪碑関連の画像は、すべて株式会社栄光社撮影のものを使用しています。
+</p>
+
+<p>
+注２：<a href="mailto:awazuseba@gmail.com" style="color:skyblue">管理人へのお問い合わせはこちら</a>
+<br /><span style="color:cadetblue">（クリックするとメールアプリが起動します。※常時確認していないアドレスのため、返信にお時間をいただく場合がございます。）</span>
+</p>
+
+<p style="color:orangered">
+当サイトに掲載されているすべての画像の、他への転載・複製および二次利用は一律でお断りいたします。
+</p>
+
+
+</section>
+
+<section>
+<p style="font-size:14px">各写真をクリックすると写真の説明を表示します。（オリジナル画像出典元：千葉鉄道管理局史）
+<br />主な掲載写真：旧国鉄千葉駅、西千葉気動車区、千葉機関区、佐倉機関区、房總西線湊川橋、気動車内での検札の様子、成田鉄道の食堂車車内風景（イラストから実写化）など</p>
+
+	<div class="ui-tools-maronry1-parts">
+
+<!-- Masonry のカラム幅の基準 -->
+<div class="masonry1-size-parts"></div>
+
+<div class="list-parts">
+<a href="images/topimg/chiba-wm.jpg" data-fancybox="gallery" data-caption="旧千葉駅">
+<img src="images/topimg/chiba-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/topimg/funabashi-wm.jpg" data-fancybox="gallery" data-caption="現船橋駅">
+<img src="images/topimg/funabashi-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+
+<div class="list-parts">
+<a href="images/topimg/kensatu3-wm.jpg" data-fancybox="gallery" data-caption="車内検札">
+<img src="images/topimg/kensatu3-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/topimg/kenshu-wm.jpg" data-fancybox="gallery" data-caption="西千葉気動車区での検修">
+<img src="images/topimg/kenshu-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/topimg/kikanku-wm.jpg" data-fancybox="gallery" data-caption="千葉機関区">
+<img src="images/topimg/kikanku-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/topimg/koiwa-wm.jpg" data-fancybox="gallery" data-caption="現小岩駅">
+<img src="images/topimg/koiwa-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/topimg/minatogawa-wm.jpg" data-fancybox="gallery" data-caption="房総西線湊川橋">
+<img src="images/topimg/minatogawa-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/topimg/narita-wm.jpg" data-fancybox="gallery" data-caption="成田鉄道の食堂車車内風景（イラスト画からAIで実写風に復元しています。）">
+<img src="images/topimg/narita-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/topimg/sakura-wm.jpg" data-fancybox="gallery" data-caption="佐倉機関区">
+<img src="images/topimg/sakura-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/topimg/honchiba-wm.jpg" data-fancybox="gallery" data-caption="現本千葉駅">
+<img src="images/topimg/honchiba-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+<div class="list-parts">
+<a href="images/topimg/shusatu-wm.jpg" data-fancybox="gallery" data-caption="出札窓口">
+<img src="images/topimg/shusatu-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+
+<div class="list-parts">
+<a href="images/topimg/kidoushaku-wm.jpg" data-fancybox="gallery" data-caption="西千葉気動車区">
+<img src="images/topimg/kidoushaku-wm.jpg" alt="" loading="lazy">
+</a>
+</div>
+
+</section>
+
+<!--
+<section><p style="text-align:right;font-size:0.7em"><a href="mailto:awazuseba@gmail.com">当サイトへのお問い合わせ</a></p></section>
+-->
+
+
+
+
+
+
+
+
+
+
+<!--以下の行はテンプレートの著作。削除しないで下さい。-->
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+</div>
+<!--/#container-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--開閉メニュー-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">トップページ</a></li>
+<li><a href="nakaduri.html">中吊りポスター</a>
+<ul>
+	<li><a href="nakaduri1-3.html">1月〜3月</a></li>
+	<li><a href="nakaduri4-6.html">4月〜6月</a></li>
+	<li><a href="nakaduri7-9.html">7月〜9月</a></li>
+	<li><a href="nakaduri10-12.html">10月〜12月</a></li>
+	</ul>
+</li>
+
+<li><li><a href="ekipo.html">駅貼りポスター</a>
+<ul>
+	<li><a href="ekipo1-3.html">1月〜3月</a></li>
+	<li><a href="ekipo4-6.html">4月〜6月</a></li>
+	<li><a href="ekipo7-9.html">7月〜9月</a></li>
+	<li><a href="ekipo10-12.html">10月〜12月</a></li>
+	</ul></li>
+</ul>
+
+</nav>
+
+</div>
+<!--/#menubar-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Masonry & imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+
+<!-- Fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+<script src="js/parts.js"></script>
+
+</body>
+</html>
